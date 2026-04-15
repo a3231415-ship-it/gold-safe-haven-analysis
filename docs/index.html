@@ -4,29 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美國、以色列與伊朗戰爭分析 - 黃金避險資產</title>
+    <title>美國、以色列與伊朗戰爭分析 - 黃金避險資產研究報告</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; max-width: 1000px; margin: 0 auto; color: #333; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #2980b9; margin-top: 30px; }
-        img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; padding: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .footer { margin-top: 50px; font-size: 0.9em; color: #7f8c8d; text-align: center; }
+        body { font-family: 'Times New Roman', 'DFKai-SB', serif; line-height: 1.8; padding: 40px; max-width: 1000px; margin: 0 auto; color: #222; background-color: #fdfdfd; }
+        h1 { color: #1a2529; border-bottom: 2px solid #2c3e50; padding-bottom: 15px; text-align: center; }
+        h2 { color: #2c3e50; margin-top: 40px; border-left: 4px solid #3498db; padding-left: 10px; }
+        p { text-align: justify; text-indent: 2em; margin-bottom: 20px; font-size: 1.1em; }
+        .chart-container { text-align: center; margin: 30px 0; }
+        img { max-width: 100%; height: auto; border: 1px solid #ccc; box-shadow: 2px 2px 8px rgba(0,0,0,0.1); }
+        .footer { margin-top: 60px; font-size: 0.9em; color: #555; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
-    <h1>中東地緣政治衝突對黃金避險資產之影響分析</h1>
-    <p>本網頁由 GitHub Actions 自動抓取最新 Yahoo Finance 數據並重新繪製。這展示了戰爭風險升溫時，黃金價格與傳統總經指標的動態關係。</p>
+    <h1>中東地緣政治衝突對黃金避險資產之影響與未來預測</h1>
+    
+    <h2>一、 研究背景與動機</h2>
+    <p>本研究旨在探討中東地區，特別是美國、以色列與伊朗之間的地緣政治衝突，對國際黃金價格走勢的具體影響。黃金長期以來被視為全球金融市場的終極避險資產，其價格波動不僅受到實質供需影響，更與總體經濟指標及國際資金流向緊密相連。本研究建立之假設指出，當武裝衝突或經濟制裁等重大地緣政治風險事件發生時，市場避險情緒的急遽升溫將打破黃金與傳統總經變數間的常規連動，進而驅動金價產生顯著的結構性變化。</p>
 
-    <h2>一、 時間序列分析：黃金價格與市場恐慌指數 (VIX)</h2>
-    <p>此圖表檢驗研究假設一：當重大地緣政治事件發生，VIX 指數飆升時，黃金作為避險資產是否出現顯著的價格推升。</p>
-    <img src="gold_vix_trend.png" alt="Gold and VIX Trend">
+    <h2>二、 變數設計與時間序列分析</h2>
+    <p>為了嚴謹驗證上述假設，本模型之預測目標設定為黃金期貨價格，並納入美元指數、美國十年期公債殖利率以及VIX恐慌指數作為關鍵自變數。以下圖表展示了各項指標的歷史趨勢與分配特徵。透過雙Y軸時間序列圖可以觀察到，在VIX指數飆高的特定風險時期，黃金價格往往呈現正向的避險溢酬反應。此外，美元指數與美債殖利率的趨勢變化，亦反映了國際資本在無風險資產與避險資產間的流動軌跡。</p>
+    
+    <div class="chart-container"><img src="chart_01.png" alt="Chart 1"></div>
+    <div class="chart-container"><img src="chart_03.png" alt="Chart 3"></div>
+    <div class="chart-container"><img src="chart_04.png" alt="Chart 4"></div>
+    <div class="chart-container"><img src="chart_05.png" alt="Chart 5"></div>
+    <div class="chart-container"><img src="chart_06.png" alt="Chart 6"></div>
+    <div class="chart-container"><img src="chart_07.png" alt="Chart 7"></div>
 
-    <h2>二、 相關性分析：黃金、美元指數與美債殖利率</h2>
-    <p>此圖表檢驗研究假設二：在極端風險下，黃金與美元 (DXY)、美國十年期公債殖利率 (US10Y) 傳統的負相關性是否發生改變。</p>
-    <img src="correlation_heatmap.png" alt="Correlation Heatmap">
+    <h2>三、 相關性與迴歸分析</h2>
+    <p>在確認個別變數的時間序列特徵後，本研究進一步執行相關性矩陣與線性迴歸分析。傳統財務理論認為黃金與美元及實質利率存在顯著的負相關性。然而，透過散點圖與線性迴歸趨勢線的擬合檢驗可以發現，在地緣政治風險主導市場的區間內，此負相關結構可能受到雙重避險需求的干擾而產生偏移。這為我們理解極端事件下的金融市場動態提供了量化證據。</p>
+    
+    <div class="chart-container"><img src="chart_02.png" alt="Chart 2"></div>
+    <div class="chart-container"><img src="chart_08.png" alt="Chart 8"></div>
+    <div class="chart-container"><img src="chart_09.png" alt="Chart 9"></div>
+
+    <h2>四、 AI 預測模型建立與分析 (ARIMA)</h2>
+    <p>為預測未來金價走勢，本專案運用自迴歸整合移動平均模型（ARIMA）進行時間序列預測。本模型考量了歷史價格的自我迴歸特性與隨機誤差項的移動平均效應。下圖展示了利用近期交易數據訓練後，對未來30個交易日的金價預測軌跡與信賴區間。此預測結果綜合反映了當前市場已消化的地緣政治風險溢酬，以及技術面的趨勢慣性，可作為後續投資決策與風險控管的重要量化參考依據。</p>
+
+    <div class="chart-container"><img src="chart_10.png" alt="Chart 10"></div>
 
     <div class="footer">
-        <p>自動化資料更新時間：由 GitHub Actions 觸發執行</p>
+        <p>本學術報告之圖表與預測模型均由 GitHub Actions 自動化管線即時生成與部署。</p>
     </div>
 </body>
 </html>
